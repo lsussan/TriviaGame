@@ -5,7 +5,7 @@ $("#startPage").on("click", function() {
 	startGame();
 })
 
-  //Variables
+// Variables
   var questionCount = 0;
   var number = 30;
   var wins = 0;
@@ -116,6 +116,7 @@ var questions = [{
 
   function itsTrue () {
     if (ans3 == true && questionCount == 0){
+      $("surprise").append("<img src= 'assets/images/Duke Snider.jpg' />");
       resetTimers();
       correct();
       stop();
@@ -141,7 +142,7 @@ var questions = [{
 
 //Timer for the main question page
     function timerOne(){
-      fiveCounter = setInterval(decrement, 1000);
+      timeCounter = setInterval(decrement, 1000);
     }
 
     function decrement(){
@@ -155,7 +156,7 @@ var questions = [{
     }
 
     function stop(){
-      clearInterval(fiveCounter);
+      clearInterval(timeCounter);
     }
 
     //When time is up, send user to "Time is up!" page.
