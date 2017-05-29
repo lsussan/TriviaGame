@@ -195,8 +195,7 @@ var questions = [{
       var timeUpNumber = 5;
       $("#questionDiv").addClass("hideDiv");
       $("#resultDiv").removeClass("hideDiv");
-      $(".result").text("You're correct!!")
-      
+      $(".result").text("You're correct!!");
       runClock();
 
       ans1 = false;
@@ -208,7 +207,7 @@ var questions = [{
 
       //Timer for correct/incorrect page (5 secs)
       function runClock(){
-        sounter = setInterval(decrement, 1000);
+        inCounter = setInterval(decrement, 1000);
       }
 
       function decrement(){
@@ -223,7 +222,7 @@ var questions = [{
       }
 
       function stop(){
-        clearInterval(sounter);
+        clearInterval(inCounter);
       }
   }
 
@@ -245,7 +244,7 @@ var questions = [{
 
       //Timer for correct/incorrect opage (5 sec)
       function runClock(){
-        sounter = setInterval(decrement, 1000);
+        inCounter = setInterval(decrement, 1000);
       }
 
       function decrement(){
@@ -260,7 +259,7 @@ var questions = [{
       }
 
       function stop(){
-        clearInterval(sounter);
+        clearInterval(runClock);
       }
   }
   })
