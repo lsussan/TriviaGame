@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia Game</title>
+        <!-- // make responsive // -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- // link to bootstrap // -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- // link to css // -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  </head>
+  <body>
+
+<!--Initial game start page-->
+
+<div id="startPage" class="container gameArea">
+    <div class="row titleHeader getDown">
+        <div clsss="col-md-12">
+            <h1>Los Angeles Dodgers Trivia Game</h1>
+        </div>
+    </div>
+
+<div id="startbuttonRow" class="row row-centered">
+    <div class="col-md-6 col-centered">
+        <a href="#" id="startButton" class="btn btn-default btn-lg btn-block">Start Game...Go Dodgers!</a>
+    </div>
+
+    <div class="row row-centered">
+    		<img id ="image-responsive" src="assets/images/Dodgers Logo.jpg" alt = "logo">
+    </div>
+
+</div>
+
+</div>
+
+<!--section with game play-->
+
+<div id="questionDiv" class="container gameArea hideDiv">
+    <div class="row titleHeader getDown">
+        <div clsss="col-md-12">
+          <h1>Los Angeles Dodgers Trivia Game</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+          <p class="time">Time Remaining: <span class="timeRemaining">30</span></p>
+        </div>
+    </div>
+
+          <div class="row answer">
+              <p id="question">Question</p>
+          </div>
+
+                <div class="row row-centered">
+                    <div class="col-md-8 col-centered answer">
+                        <p><a href="#" id="answer1" class="btn btn-default btn-lg btn-block">Answer1</a></p>
+                    </div>
+                </div>
+
+                <div class="row row-centered">
+                    <div class="col-md-8 col-centered answer">
+                        <p><a href="#" id="answer2" class="btn btn-default btn-lg btn-block">Answer2</a></p>
+                    </div>
+                </div>
+
+                <div class="row row-centered">
+                    <div class="col-md-8 col-centered answer">
+                      <p><a href="#" id="answer3" class="btn btn-default btn-lg btn-block">Answer3</a></p>
+                    </div>
+                </div>
+
+                <div class="row row-centered">
+                    <div class="col-md-8 col-centered answer lastAnswer">
+                      <p><a href="#" id="answer4" class="btn btn-default btn-lg btn-block">Answer4</a></p>
+                    </div>
+                </div>
+</div>
+
+
+<!--- Section for the correct guess-->
+      <div id="resultDiv" class="container gameArea hideDiv">
+
+        	<div class="row titleHeader getDown">
+      	  	<div class="col-md-12">
+      						<h1>Los Angeles Dodgers Trivia Game</h1>
+      		  </div>
+      	  </div>
+
+      	  <div class="row">
+      		  <div class="col-md-12">
+      			    <p class="time">Next question in....<span class="nextQuestion">5</span></p>
+      		  </div>
+      	  </div>
+
+      	  <div class="row">
+      		  <div class="col-md-12">
+      			    <p id="resultText">
+      			 <span class="result"></span>
+      			    </p>
+      		  </div>
+      	  </div>
+
+      </div>
+
+
+<!-- // link to jquery  -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- link to javascript -->
+<script src= "assets/javascript/app.js" type="text/javascript"></script>
+</body>
+</html>

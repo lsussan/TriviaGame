@@ -1,0 +1,107 @@
+Body {
+  background: dodgerblue;
+}
+
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+   	display:inline-block;
+    float:none;
+    text-align:left;
+    margin-right:-4px;
+}
+
+#image-responsive {
+  margin-top: 50px;
+  width: 250px;
+  height: 2500px:
+}
+
+h1 {
+	text-align: center;
+	font-size: 60px;
+	color: white;
+}
+
+p {
+	text-align: center;
+	font-size: 35px;
+	color: white;
+}
+
+.titleHeader {
+	padding-bottom: 5%;
+}
+
+.gameArea {
+	margin-top: 5%;
+	width: 70%;
+	height: 700px;
+	margin-left: 15%;
+	background-color: #4e5d6c;
+}
+
+.getDown {
+	margin-top: 4%;
+}
+
+
+.time {
+	font-size: 30px;
+}
+
+/*Toggle whether div is visible or not*/
+
+
+.hideDiv {
+	display: none;
+}
+
+/*Start page*/
+
+#startButton {
+	background-color: dodgerBlue;
+}
+
+#startbuttonRow {
+	margin-top: 8%;
+}
+
+/*Result Page*/
+
+
+#resultText {
+
+}
+
+.result {
+
+}
+
+/*ANSWER BUTTONS*/
+
+.answer {
+	margin-bottom: 1%;
+}
+
+.lastAnswer {
+	padding-bottom: 3%;
+}
+
+#answer1 {
+	background-color: #5cb85c;
+}
+
+#answer2 {
+	background-color: #d9534f;
+}
+
+#answer3 {
+	background-color: #5bc0de;
+}
+
+#answer4 {
+	background-color: #f0ad4e;
+}
